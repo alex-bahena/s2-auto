@@ -11,8 +11,8 @@ function Hero() {
                 <div className="hero-container ">
                     <h1 className="">S2 AUTO
                     </h1>
-                    <h2>EXPERT CAR REPAIRS <br />GUARANTEED QUALITY</h2>
-                    <p>We provide highly skilled mechanics and exceptional customer <br /> service, all at competitive rates for vehicle repairs.</p>
+                    <h2>Top-Rated Car Repair Services{!isMobile?<br />:<>,</> } Guaranteed Quality You Can Trust</h2>
+                    <p>We provide highly skilled mechanics and exceptional customer {!isMobile?<br />:<></> } service, all at competitive rates for vehicle repairs in Scarborough.</p>
                     <div className="hero-contact">
                         <button className="hero-button">contact us</button>
                         {isMobile ? <br /> : <></>}
