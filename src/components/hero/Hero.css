@@ -30,6 +30,7 @@
 .hero h2 {
     font-size: 3rem;
     color: var(--color-background);
+    text-transform: uppercase;
 }
 
 .hero p {
@@ -49,11 +50,11 @@
 }
 
 .hero .hero-contact .hero-phone {
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: var(--color-background);
     display: inline-block;
     vertical-align: middle;
-    margin-left: 2rem;
+    margin-left: 4rem;
 }
 
 .hero .hero-contact .hero-phone-number {
@@ -62,7 +63,8 @@
     font-family: 'Days one', sans-serif;
     display: inline-block;
     vertical-align: middle;
-    margin-left: 2rem;
+    margin-left: .5rem;
+    padding-bottom: .2rem;
 }
 
 .hero .hero-banner {
@@ -122,7 +124,7 @@
     }
     
     .hero h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         color: var(--color-background);
     }
     
@@ -137,31 +139,30 @@
     .hero .hero-contact {
         grid-column-start: 2;
         grid-row-start: 3;
-        
     }
     
     .hero .hero-contact .hero-button {
-        font-size: 1rem;
-        margin-top: 2rem;
-       
+        font-size: 1.1rem;
+        margin-top: 2rem;     
     }
     
     .hero .hero-contact .hero-phone {
         font-size: 1.5rem;
         margin-left: 0;
+        margin-top: 1rem;
     }
     
     .hero .hero-contact .hero-phone-number {
-        font-size: .9rem;
+        font-size: 1.1rem;
         margin-left: .5rem;
+        margin-top: 1rem;
     }
 
 
     .hero .hero-banner {
         height: 60%;
         gap: 2rem;
-        padding: .8rem 1rem;
-        
+        padding: 1.5rem 1rem;
     }
     
     .hero .hero-banner .banner-symbol {
@@ -170,8 +171,7 @@
         display: inline-block;
         vertical-align: middle;
         grid-row-start: 1;
-        grid-row: 1 / span 3;
-       
+        grid-row: 1 / span 3;       
     }
     
     .hero .hero-banner .banner-point {

@@ -1,0 +1,285 @@
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: 30vh 30vh repeat(1, minmax(0, 1fr));
+    row-gap: 1rem;
+
+    align-content: center;
+    max-width: 1172px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.services .service-1 {
+    grid-column-start: 1;
+    grid-column: 1 / span 2;
+}
+
+.services .service-1 img {
+    max-width: 50rem;
+    height: auto;
+}
+
+.services .service-content-2 {
+    grid-column-start: 3;
+    grid-row: 1 / span 2;
+    margin: 0 auto;
+    max-width: 29.75rem;
+}
+
+.services .service-content-2 span:nth-child(1) {
+    display: inline-block;
+    vertical-align: middle;
+    color: var(--color-primary);
+}
+
+.services .service-content-2 span:nth-child(2) {
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-left: .5rem;
+    font-weight: 500;
+
+}
+
+.services .service-content-2 .content-2-header {
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+
+.services .service-content-2 .content-2-info {
+    line-height: 2rem;
+    font-size: 1.3rem;
+    max-width: 377px;
+}
+
+.services .service-2 {
+    grid-column-start: 3;
+    grid-row: 2 / span 3;
+}
+
+/* Lazy load / opacity */
+.service-1 img,
+.service-2 img,
+.services .service-3 .service-3-cards>div img {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.service-1 img.visible,
+.service-2 img.visible,
+.services .service-3 .service-3-cards>div img.visible {
+    opacity: 1;
+}
+
+/* Lazy load / opacity */
+
+
+.services .service-2 img {
+    max-width: 377px;
+    height: auto;
+    margin-top: 1rem;
+}
+
+
+.services .service-3 {
+    grid-column-start: 1;
+    grid-column: 1 / span 3;
+    grid-row-start: 3;
+    max-width: fit-content;
+
+}
+
+
+.services .service-3 span:nth-child(1) {
+    display: inline-block;
+    vertical-align: middle;
+    color: var(--color-primary);
+}
+
+.services .service-3 span:nth-child(2) {
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-left: .5rem;
+    font-weight: 500;
+
+}
+
+.services .service-3 .content-3-header {
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+
+
+.services .service-3 .service-3-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    text-align: center;
+}
+
+.services .service-3 .service-3-cards .service-card-1 {
+    background-color: #FFFF;
+    width: fit-content;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    font-family: 'Days One', sans-serif;
+    color: var(--color-primary);
+}
+
+.services .service-3 .service-3-cards .service-card-2 {
+    background-color: #FFFF;
+    width: fit-content;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-family: 'Days One', sans-serif;
+    color: var(--color-primary);
+}
+
+.services .service-3 .service-3-cards .service-card-3 {
+    background-color: #FFFF;
+    width: fit-content;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    font-family: 'Days One', sans-serif;
+    color: var(--color-primary);
+}
+
+.services .service-3 .service-3-cards>div h3 {
+    margin-top: 1rem;
+}
+
+.services .service-3 .service-3-cards>div img {
+    max-width: 377px;
+    height: auto;
+}
+
+.services .service-3 .view-more {
+    grid-column-start: 1;
+    grid-column: 1 / span 4;
+    margin: 1rem auto;
+}
+
+.services .service-3 .view-more:hover {
+    cursor: pointer;
+}
+
+
+
+.services .service-3 .service-3-cards .service-card-4 {
+    background-color: #FFFF;
+    width: fit-content;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    font-family: 'Days One', sans-serif;
+    color: var(--color-primary);
+    grid-column-start: 1;
+}
+
+.services .service-3 .service-3-cards .service-card-5 {
+    background-color: #FFFF;
+    width: fit-content;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    font-family: 'Days One', sans-serif;
+    color: var(--color-primary);
+    grid-column-start: 2;
+}
+
+.services .service-3 .service-3-cards .service-card-6 {
+    background-color: #FFFF;
+    width: fit-content;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    font-family: 'Days One', sans-serif;
+    color: var(--color-primary);
+    grid-column-start: 3;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .services {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1, minmax(0, 1fr));
+        row-gap: 1rem;
+        max-width: auto;
+        margin: 0 0;
+        overflow: hidden;
+        place-items: center;
+    }
+
+.services .service-content-2 {
+    grid-column-start: 1;
+    grid-row: 1;
+    padding: 1rem;
+    max-width: auto;
+}
+
+.services .service-content-2 div{
+    max-width: 343px;
+}
+
+.services .service-content-2 .content-2-header {
+ font-size: 1.3rem;
+
+}
+
+.services .service-content-2 .content-2-info {
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+}
+
+.services .service-content-2 .service-2 {
+grid-column-start: 1;
+text-align: center;
+}
+
+.services .service-content-2 .service-2 img {
+    max-width: 343px;
+    margin-top: 2rem;
+}
+
+.services .service-3 {
+    grid-column: 1;
+    grid-row-start: 2;
+    padding: 1rem;
+}
+
+.services .service-3 .content-3-header {
+        font-size: 1.3rem;
+}
+
+.services .service-3 .service-3-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+}
+
+.services .service-3 .service-3-cards>div img {
+    max-width: 343px;
+    height: auto;
+}
+
+.services .service-3 .view-more {
+    grid-column: 1;
+    margin: 1rem auto;
+}
+
+
+
+.services .service-3 .service-3-cards .service-card-4 {
+    grid-column-start: 1;
+}
+
+.services .service-3 .service-3-cards .service-card-5 {
+    grid-column-start: 1;
+}
+
+.services .service-3 .service-3-cards .service-card-6 {
+    grid-column-start: 1;
+}
+
+}
